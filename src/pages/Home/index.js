@@ -5,6 +5,7 @@ import * as ScreenOrientation from 'expo-screen-orientation';
 
 import VideosList from '../../Database/videos.json';
 import VideosList2 from '../../Database/videos2.json';
+import VideosList3 from '../../Database/videos3.json';
 import Header from "../../components/Header";
 import Videos from "../../components/Videos";
 import Poster from "../../components/Poster";
@@ -36,9 +37,9 @@ export default function Home(){
                     tags={["React Native", "Expo"]}
                     content={<Header />}
                 ></Poster>
-                <Videos label="Recomendados" videos={VideosList}> </Videos>
-                <Videos label="Lançamentos" videos={VideosList}> </Videos>
-                <Videos label="Mais vistos" videos={VideosList}> </Videos>
+                <Videos label="Banco de Dados" videos={VideosList}> </Videos>
+                <Videos label="PHP" videos={VideosList2}> </Videos>
+                <Videos label="JavaScript" videos={VideosList3}> </Videos>
             </Container>
         </>
     );
